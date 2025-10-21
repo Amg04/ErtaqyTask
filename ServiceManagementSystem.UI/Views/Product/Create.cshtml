@@ -1,0 +1,61 @@
+﻿@model ProductViewModel
+@{
+	ViewData["Title"] = "Create Product";
+}
+<div class="container mt-4">
+	<h2>Add New Product</h2>
+
+	<form asp-action="Create">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label asp-for="ProductName" class="control-label"></label>
+					<input asp-for="ProductName" class="form-control" />
+					<span asp-validation-for="ProductName" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="Price" class="control-label"></label>
+					<input asp-for="Price" class="form-control" />
+					<span asp-validation-for="Price" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="CreationDate" class="control-label"></label>
+					<input asp-for="CreationDate" class="form-control" type="date" />
+					<span asp-validation-for="CreationDate" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="ServiceProviderId" class="control-label">Service Provider</label>
+					<select asp-for="ServiceProviderId" class="form-control"
+							asp-items="@(new SelectList(Model.ServiceProviders, "Id", "Name"))">
+						<option value="">All Providers</option>
+					</select>
+					<span asp-validation-for="ServiceProviderId" class="text-danger"></span>
+				</div>
+
+				<div class="form-group mt-3">
+					<button type="submit" class="btn btn-success">Save</button>
+					<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            const creationDateField = document.getElementById('CreationDate');
+            if (creationDateField && !creationDateField.value) {
+                creationDateField.value = today;
+            }
+        });
+    </script>
+}

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ServiceManagementSystem.Core.Entities.Product>
+
+@if (Model != null && Model.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-hover product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Created Date</th>
+                    <th>Service Provider</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr class="product-row">
+                        <td>
+                            <strong>@product.ProductName</strong>
+                        </td>
+                        <td>
+                            <span class="badge bg-success fs-6">@product.Price.ToString("C")</span>
+                        </td>
+                        <td>
+                            <span class="text-muted">@product.CreationDate.ToString("MMM dd, yyyy")</span>
+                        </td>
+                        <td>
+                            <div>
+                                <strong>@product.ServiceProvider?.Name</strong>
+                                @if (!string.IsNullOrEmpty(product.ServiceProvider?.Email))
+                                {
+                                    <br />
+                                    <small class="text-muted">
+                                        <i class="fas fa-envelope me-1"></i>@product.ServiceProvider.Email
+                                    </small>
+                                }
+                            </div>
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(product.ServiceProvider?.Phone))
+                            {
+                                <span class="text-muted">
+                                    <i class="fas fa-phone me-1"></i>@product.ServiceProvider.Phone
+                                </span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="alert alert-success mt-3">
+        <i class="fas fa-check-circle me-2"></i>
+        Found <strong>@Model.Count()</strong> product(s) matching your criteria.
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-search fa-4x text-muted mb-3"></i>
+        <h4 class="text-muted">No Products Found</h4>
+        <p class="text-muted">No products match your current filter criteria.</p>
+        <button onclick="$('#filterForm')[0].reset(); applyFilters();" class="btn btn-primary mt-2">
+            <i class="fas fa-redo me-2"></i>Reset Filters
+        </button>
+    </div>
+}

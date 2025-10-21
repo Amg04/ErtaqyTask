@@ -1,0 +1,140 @@
+﻿@model IEnumerable<ServiceManagementSystem.Core.Entities.ServiceProvider>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>
+                    <i class="fas fa-users me-2"></i>Service Providers Management
+                </h2>
+                <a asp-action="Create" class="btn btn-success">
+                    <i class="fas fa-plus me-2"></i>Add New Provider
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-list me-2"></i>Providers List
+                        <span class="badge bg-primary ms-2">@Model.Count()</span>
+                    </h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="refreshProviders()">
+                            <i class="fas fa-sync-alt me-1"></i>Refresh
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped mb-0">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Created Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var provider in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@provider.Name</strong>
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(provider.Email))
+                                                {
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-envelope text-muted me-2"></i>
+                                                        <a href="mailto:@provider.Email" class="text-decoration-none">
+                                                            @provider.Email
+                                                        </a>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted">N/A</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(provider.Phone))
+                                                {
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-phone text-muted me-2"></i>
+                                                        <a href="tel:@provider.Phone" class="text-decoration-none">
+                                                            @provider.Phone
+                                                        </a>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted">N/A</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(provider.Address))
+                                                {
+                                                    <span class="text-muted">@provider.Address</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted">N/A</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <span class="text-muted">@provider.CreatedDate.ToString("MMM dd, yyyy")</span>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-users fa-4x text-muted mb-3"></i>
+                            <h4 class="text-muted">No Service Providers Found</h4>
+                            <p class="text-muted">
+                                No service providers available. Start by adding a new provider.
+                            </p>
+                            <a asp-action="Create" class="btn btn-success mt-2">
+                                <i class="fas fa-plus me-2"></i>Add New Provider
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function refreshProviders() {
+            window.location.reload();
+        }
+
+        $(document).ready(function() {
+            $('.table tbody tr').hover(
+                function() {
+                    $(this).addClass('table-active');
+                },
+                function() {
+                    $(this).removeClass('table-active');
+                }
+            );
+        });
+    </script>
+}

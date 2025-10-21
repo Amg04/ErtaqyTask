@@ -1,0 +1,219 @@
+﻿@model ProductIndexViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>
+                    <i class="fas fa-boxes me-2"></i>Products Management
+                </h2>
+                <a asp-action="Create" class="btn btn-success">
+                    <i class="fas fa-plus me-2"></i>Add New Product
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-filter me-2"></i>Filter Products
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form id="filterForm" method="get" asp-action="Index">
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Price Range</label>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <input type="number" asp-for="Filter.MinPrice" class="form-control" placeholder="Min Price" step="0.01" min="0">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="number" asp-for="Filter.MaxPrice" class="form-control" placeholder="Max Price" step="0.01" min="0">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Creation Date</label>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <input type="date" asp-for="Filter.FromDate" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="date" asp-for="Filter.ToDate"  class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Service Provider</label>
+                                <select asp-for="Filter.ServiceProviderId"
+                                        class="form-select"
+                                        asp-items="@(new SelectList(Model.ServiceProviders, "Id", "Name"))">
+                                    <option value="">All Providers</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label d-none d-md-block">&nbsp;</label>
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button type="submit" class="btn btn-primary me-2"> <i class="fas fa-search me-2"></i>Apply</button>
+                                    <a href="@Url.Action("Index")" class="btn btn-outline-secondary">
+                                        <i class="fas fa-redo me-2"></i>Reset
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-list me-2"></i>Products List
+                        <span class="badge bg-primary ms-2">@Model.Products.Count()</span>
+                    </h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="refreshProducts()">
+                            <i class="fas fa-sync-alt me-1"></i>Refresh
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    @if (Model.Products != null && Model.Products.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped mb-0">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Price</th>
+                                        <th>Created Date</th>
+                                        <th>Service Provider</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var product in Model.Products)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@product.ProductName</strong>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-success fs-6">@product.Price.ToString("C")</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted">@product.CreationDate.ToString("MMM dd, yyyy")</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <strong>@product.ServiceProvider?.Name</strong>
+                                                    @if (!string.IsNullOrEmpty(product.ServiceProvider?.Email))
+                                                    {
+                                                        <br />
+                                                        <small class="text-muted">
+                                                            <i class="fas fa-envelope me-1"></i>@product.ServiceProvider.Email
+                                                        </small>
+                                                    }
+                                                </div>
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(product.ServiceProvider?.Phone))
+                                                {
+                                                    <span class="text-muted">
+                                                        <i class="fas fa-phone me-1"></i>@product.ServiceProvider.Phone
+                                                    </span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card-footer bg-light">
+                            <div class="alert alert-success mb-0">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Showing <strong>@Model.Products.Count()</strong> product(s)
+                                @if (ViewContext.HttpContext.Request.QueryString.HasValue)
+                                {
+                                    <span>matching your filter criteria</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-search fa-4x text-muted mb-3"></i>
+                            <h4 class="text-muted">No Products Found</h4>
+                            <p class="text-muted">
+                                @if (ViewContext.HttpContext.Request.QueryString.HasValue)
+                                {
+                                    <span>No products match your current filter criteria.</span>
+                                }
+                                else
+                                {
+                                    <span>No products available. Start by adding a new product.</span>
+                                }
+                            </p>
+                            <a href="@Url.Action("Index")" class="btn btn-primary mt-2">
+                                <i class="fas fa-redo me-2"></i>Reset Filters
+                            </a>
+                            <a asp-action="Create" class="btn btn-success mt-2 ms-2">
+                                <i class="fas fa-plus me-2"></i>Add New Product
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function() {
+            // setDefaultDates();
+
+            $('#Filter_MinPrice, #Filter_MaxPrice, #Filter_FromDate, #Filter_ToDate, #Filter_ServiceProviderId')
+                .on('change', function() {
+                });
+        });
+
+        function setDefaultDates() {
+            const fromDate = $('#Filter_FromDate');
+            const toDate = $('#Filter_ToDate');
+
+            if (!fromDate.val()) {
+                const oneMonthAgo = new Date();
+                oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+                fromDate.val(oneMonthAgo.toISOString().split('T')[0]);
+            }
+
+            if (!toDate.val()) {
+                const today = new Date().toISOString().split('T')[0];
+                toDate.val(today);
+            }
+        }
+
+        function refreshProducts() {
+            $('#filterForm').submit();
+        }
+    </script>
+}

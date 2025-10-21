@@ -1,0 +1,11 @@
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\bin\Debug\net8.0\ServiceManagementSystem.Core.deps.json
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\bin\Debug\net8.0\ServiceManagementSystem.Core.dll
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\bin\Debug\net8.0\ServiceManagementSystem.Core.pdb
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.dll
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\refint\ServiceManagementSystem.Core.dll
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.pdb
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ref\ServiceManagementSystem.Core.dll
