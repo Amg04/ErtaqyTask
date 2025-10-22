@@ -5,6 +5,7 @@ C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceMan
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.AssemblyInfoInputs.cache
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.AssemblyInfo.cs
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.sourcelink.json
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.dll
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\refint\ServiceManagementSystem.Core.dll
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Core\obj\Debug\net8.0\ServiceManagementSystem.Core.pdb

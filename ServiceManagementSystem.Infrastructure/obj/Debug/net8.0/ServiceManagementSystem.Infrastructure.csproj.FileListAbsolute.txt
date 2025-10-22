@@ -8,6 +8,7 @@ C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceMan
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceManagementSystem.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceManagementSystem.Infrastructure.AssemblyInfo.cs
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceManagementSystem.Infrastructure.sourcelink.json
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceM.789CC90A.Up2Date
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\ServiceManagementSystem.Infrastructure.dll
 C:\Users\ahmed\Desktop\Ahmed Ghalwash\ServiceManagementSystemSolution\ServiceManagementSystem.Infrastructure\obj\Debug\net8.0\refint\ServiceManagementSystem.Infrastructure.dll

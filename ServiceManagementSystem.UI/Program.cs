@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using ServiceManagementSystem.Core.Interfaces;
 using ServiceManagementSystem.Infrastructure.Data;
 using ServiceManagementSystem.Infrastructure.Repositories;
@@ -16,8 +17,14 @@ namespace ServiceManagementSystem.UI
             builder.Services.AddScoped<IDatabaseConnection, DatabaseConnection>();
             builder.Services.AddScoped<IServiceProviderRepository, ServiceProviderRepository>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
-            builder.Services.AddScoped<IDatabaseInitializer, DatabaseInitializer>();
             
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddScoped<IDatabaseInitializer>(provider =>
+            {
+                var database = provider.GetRequiredService<IDatabaseConnection>();
+                return new DatabaseInitializer(database, () => connectionString);
+            });
+
             builder.Services.AddLogging();
 
             var app = builder.Build();

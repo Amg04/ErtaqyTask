@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.ui\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|solutionrelative:servicemanagementsystem.ui\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5545F14F-78D3-444C-B922-47B69CF7FE39}|ServiceManagementSystem.Infrastructure\\ServiceManagementSystem.Infrastructure.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.infrastructure\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5545F14F-78D3-444C-B922-47B69CF7FE39}|ServiceManagementSystem.Infrastructure\\ServiceManagementSystem.Infrastructure.csproj|solutionrelative:servicemanagementsystem.infrastructure\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.ui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|solutionrelative:servicemanagementsystem.ui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.ui\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|solutionrelative:servicemanagementsystem.ui\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.ui\\controllers\\serviceprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|solutionrelative:servicemanagementsystem.ui\\controllers\\serviceprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB225CC-3EB1-4507-918F-D7D779B11910}|ServiceManagementSystem.UI\\ServiceManagementSystem.UI.csproj|solutionrelative:servicemanagementsystem.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5545F14F-78D3-444C-B922-47B69CF7FE39}|ServiceManagementSystem.Infrastructure\\ServiceManagementSystem.Infrastructure.csproj|c:\\users\\ahmed\\desktop\\ahmed ghalwash\\servicemanagementsystemsolution\\servicemanagementsystem.infrastructure\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5545F14F-78D3-444C-B922-47B69CF7FE39}|ServiceManagementSystem.Infrastructure\\ServiceManagementSystem.Infrastructure.csproj|solutionrelative:servicemanagementsystem.infrastructure\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +46,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "ServiceManagementSystem.UI\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "ServiceManagementSystem.UI\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T14:01:00.76Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "ServiceProviderController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Controllers\\ServiceProviderController.cs",
+              "RelativeDocumentMoniker": "ServiceManagementSystem.UI\\Controllers\\ServiceProviderController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Controllers\\ServiceProviderController.cs",
+              "RelativeToolTip": "ServiceManagementSystem.UI\\Controllers\\ServiceProviderController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:34:28.049Z"
             },
             {
               "$type": "Document",
@@ -57,22 +64,45 @@
               "RelativeDocumentMoniker": "ServiceManagementSystem.UI\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Controllers\\ProductController.cs",
               "RelativeToolTip": "ServiceManagementSystem.UI\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:59:11.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:34:28.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\ViewModels\\ProductViewModel.cs",
-              "RelativeDocumentMoniker": "ServiceManagementSystem.UI\\ViewModels\\ProductViewModel.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\ViewModels\\ProductViewModel.cs",
-              "RelativeToolTip": "ServiceManagementSystem.UI\\ViewModels\\ProductViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceManagementSystem.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.UI\\Program.cs",
+              "RelativeToolTip": "ServiceManagementSystem.UI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:55:12.882Z",
+              "WhenOpened": "2025-10-22T17:34:06.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.Infrastructure\\Data\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "ServiceManagementSystem.Infrastructure\\Data\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.Infrastructure\\Data\\DatabaseConnection.cs",
+              "RelativeToolTip": "ServiceManagementSystem.Infrastructure\\Data\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:02:37.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.Infrastructure\\Data\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "ServiceManagementSystem.Infrastructure\\Data\\DatabaseInitializer.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Ahmed Ghalwash\\ServiceManagementSystemSolution\\ServiceManagementSystem.Infrastructure\\Data\\DatabaseInitializer.cs",
+              "RelativeToolTip": "ServiceManagementSystem.Infrastructure\\Data\\DatabaseInitializer.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwCwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:02:36.651Z",
               "EditorCaption": ""
             }
           ]
